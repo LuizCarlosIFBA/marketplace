@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head> 
+
+<body>
+    <nav class="navbar col-12 fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid col-11 m-auto">
+          <!--<a class="navbar-brand" href="#">Mercado</a>-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="usuario/cadastro.html">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entrar</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Produtos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="hortifutis.html">Hortifruti</a></li>
+                  <li><a class="dropdown-item" href="biscoito.html">Biscoitos</a></li>
+                  <li><a class="dropdown-item" href="padaria.html">Padaria</a></li>
+                  <li><a class="dropdown-item" href="eletrodomestico.html">Eletrodomésticos</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="limpeza.html">Limpeza</a></li>
+                </ul>
+
+              </li>
+              <li class="nav-item">
+    
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Procure aqui!" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br><br><br>
+    
+
+    <div class="col-11 m-auto">
+        <h2 class="text-center">Limpeza</h2><br>
+      </div>
+      <div class="card-group col-11 m-auto">
+        <div class="card">
+          <img src="imagem/foto.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+          </div>
+    
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Colocar no carrinho
+          </button>
+    
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="imagem/foto.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Produto 2</h5>
+            <p class="card-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+          </div>
+          <div class="card-footer">
+           
+          </div>
+          
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Colocar no carrinho
+          </button>
+        </div>
+        <div class="card">
+          <img src="imagem/foto.webp"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Produto 3</h5>
+            <p class="card-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+          </div>
+          <div class="card-footer">
+    
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Colocar no carrinho
+          </button>
+        </div>
+    
+      
+      </div>
+    
+
+</html>
