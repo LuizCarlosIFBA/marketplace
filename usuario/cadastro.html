@@ -2,58 +2,91 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-    
-</head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
 
 <body>
-    <!--Logo-->
-    <h1>Cadastro</h1>
-    
-    <div class="col-md-3 col-xl-2">
-    <!--action="pagina.php"-->
-    <form name="#" method="post" action="sucesso.html">
-        <p> Name:
-            <input name="nome" type="text" size="25" maxlength="30" />
-        </p>
-        <p> Senha:
-            <input name="senha" type="password" size="25" maxlength="30" />
-        </p>
-        <p> E-mail:
-            <input name="email" type="email" size="25" maxlength="30" />
-        </p>
-
-        Receber novidades e ofertas por e-mail<input type="checkbox" name="novidades" value="valor do campo"
-            checked="caixa selecionada"></br>
-
-        <p> Sexo:<br>
-            <INPUT TYPE="RADIO" NAME="sexo" VALUE="m">Masculino
-            <INPUT TYPE="RADIO" NAME="sexo" VALUE="f">Feminino
-            <INPUT TYPE="RADIO" NAME="sexo" VALUE="o">Outro
-        </p>
-
-        Endereço</br><textarea name=“comentário” rows=5 cols=40></textarea><br>
-        
-        <p> CEP:
-            <input name="text" type="email" size="25" maxlength="30" />
-        </p>
-        <button type="submit" class="btn btn-primary" data-dismiss="alert">Cadastro</button>
-      
-    </form>
+    <div class="row justify-content-center">
+        <h1>Cadastro</h1>
     </div>
-    <a href="../index.html">Voltar</a>
-    <hr>
 
+    <form name="cadastro" method="post" action="sucesso.html">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-4 col-sx-4">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <br>
+
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                </div>
+
+                <div class="col-lg-4 col-sx-4">
+                    <div class="form-group">
+                        E-mail: <input name="email" class="form-control" type="email" size="25" maxlength="30" />
+                    </div>
+
+                    <div class="form-group">
+                        CEP: <input name="text" class="form-control" type="text" size="25" maxlength="30" />
+                    </div>
+
+                    <div class="form-group">
+                        Telefone: <input name="text" class="form-control" type="tel" size="25" maxlength="30" />
+                    </div>
+
+                    <div class="form-group">
+                        Endereco</br><textarea class="form-control" name=“endereco” rows=5 cols=40></textarea><br>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sx-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Receber novidades e ofertas por e-mail
+                        </label>
+
+                        <div class="col-lg-4 col-sx-4">
+                            <br>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Masculino
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Feminino
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <p>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                </p>
+            </div>
+        </div>
+        <a href="../index.html">Voltar</a>
+    </form>
 </body>
-
 
 </html>
