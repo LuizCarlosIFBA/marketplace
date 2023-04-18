@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Eletrodomésticos</title>
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,8 +16,8 @@
 </head>
 
 <body>
-  <nav class="navbar col-12 fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid col-11 m-auto">
+  <nav class="navbar col-lg-12 col-xs-3 fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid col-lg-11 col-xs-3 m-auto">
       <!--<a class="navbar-brand" href="#">Mercado</a>-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,18 +76,20 @@
   <br><br><br>
 
 
-  <div class="col-11 m-auto">
-    <h2 class="text-center">Eletrodomestico</h2><br>
+  <div class=" m-auto">
+    <h2 class="text-center">Eletrodoméstico</h2><br>
   </div>
-  <div class="card-group col-11 m-auto">
+  <div class="card-group col-lg-4 col-sx-4 m-auto">
     <div class="card">
-      <img src="imagem/foto.webp" class="card-img-top" alt="...">
+      <img src="imagem/Fritadeira.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Produto 1</h5>
+        <h5 class="card-title">Fritadeira</h5>
         <p class="card-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
           industries for previewing layouts and visual mockups.</p>
       </div>
-
+      <div class="d-flex justify-content-center card-footer">
+        <b>R$ 300,00</b>
+      </div>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Colocar no carrinho
       </button>
@@ -96,11 +98,11 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Sucesso!</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="alert alert-primary" role="alert">
+              Produto adicionado ao carrinho!
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -110,38 +112,6 @@
         </div>
       </div>
     </div>
-    <div class="card">
-      <img src="imagem/foto.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Produto 2</h5>
-        <p class="card-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </div>
-      <div class="card-footer">
-
-      </div>
-
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Colocar no carrinho
-      </button>
-    </div>
-    <div class="card">
-      <img src="imagem/foto.webp" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Produto 3</h5>
-        <p class="card-text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-          industries for previewing layouts and visual mockups.</p>
-      </div>
-      <div class="card-footer">
-
-      </div>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Colocar no carrinho
-      </button>
-    </div>
-
-
-  </div>
 
   <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
